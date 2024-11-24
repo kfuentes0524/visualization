@@ -10,18 +10,26 @@
 - For each visualization (good and bad):  
     - Explain (with reference to material covered up to date, along with readings and other scholarly sources, as needed) why you classified that visualization the way you did.
       ```
-      Your answer...
+      Good Visualization Analysis
+Title: Complaint Customer Dashboard by Putra Gema Nusa
+Platform: Tableau Public - November 17, 2024
+Link: Complaint Customer Dashboard
+This dashboard provides a comprehensive overview of customer complaints, including total complaints, complaints by media, issues, products, and response times. It also incorporates interactive date filters to explore trends. The intended audience likely includes customer service managers and business analysts, focusing on understanding customer behavior and operational inefficiencies. The dashboard is structured with clear sections, ensuring logical grouping of related data (e.g., complaints by issue and by product). Labels and legends make interpretation straightforward.Bar charts, line graphs, and other visual elements are well-chosen for presenting comparisons and trends. Colors are neutral and consistent, helping to differentiate categories without causing distraction.he visualization successfully achieves its purpose of enabling stakeholders to evaluate complaint patterns and trends. It supports decision-making by highlighting key metrics and comparisons.This dashboard exemplifies effective design by balancing functionality and aesthetics, making it a valuable tool for understanding and addressing customer complaints.
 
-
-
-
-
-
-
+Bad Visualization Analysis
+Title: MyWorld2030 Survey - Q2 by Demographic Group
+Creator: UN SDG Action Campaign
+Platform: Tableau Public
+Link: MyWorld2030survey_Q2
+This visualization aims to present survey results on the Sustainable Development Goals (SDGs) of immediate concern across different demographic categories (e.g., gender, age, education level, etc.). Each SDG is represented by a color-coded symbol, and connections across demographic groups indicate ranking and responses. The visualization uses a "Sankey-style" format to connect demographic groups, but the excessive number of colors, lines, and symbols creates significant visual clutter. The connections between groups are tangled, making it difficult to trace individual data paths or discern meaningful patterns. Each SDG is represented by a unique color and symbol, but the high number of categories leads to a visually overwhelming experience. For users unfamiliar with the SDG icons, the lack of clear labeling adds to the confusion. The visualization's small text size and absence of clear labels on key elements make it inaccessible to many viewers. Users must rely heavily on external legend references, increasing cognitive load. The connections between demographic segments are not intuitively interpretable, forcing the audience to spend significant effort deciphering the information. This visualization fails to achieve its purpose due to its overly complex design, poor readability, and lack of focus. By simplifying the layout, prioritizing clear comparisons, and improving interactivity, the visualization could more effectively communicate key insights about the SDGs of immediate concern.
       ```
     - How could this data visualization have been improved?  
       ```
-      Your answer...
+Suggestions for Improvement good Visualization Analysis.
+Annotations: Brief insights (e.g., “March saw the highest complaints for Product X”) would guide users to key findings without extra exploration.Colorblind-friendly palettes and text alternatives for visual elements would enhance inclusivity.
+
+Suggestions for Improvement Bad Visualization Analysis.
+Use simpler chart types, such as grouped bar charts, for comparisons across demographics. This would reduce visual clutter while retaining the ability to compare rankings.Instead of connecting all demographics simultaneously, create separate charts for each group and allow users to toggle between them interactively.Use annotations or callouts to highlight significant trends (e.g., the most or least selected SDGs in a specific demographic).Include brief insights or summaries at the top of the chart to guide the audience toward key takeaways. For example, “Top SDGs for Women are X, Y, Z,” or “Education Level Beyond Secondary favors SDG A.”
 
 
 
