@@ -22,6 +22,59 @@ program duration (1 year, 2 years or 4 years) average repayable debt after loan 
 
     > What software did you use to create your data visualization?
 The visualizations were created using Python and Excel. Python utilized for data analysis and programmatic plotting with Matplotlib, while Excel used for simpler data manipulation and graphical display.
+This is the code used
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Sample data creation (replace this with your actual dataset)
+data = {
+    "Academic Year": [
+        "2003-2004", "2004-2005", "2005-2006", "2006-2007", "2007-2008",
+        "2008-2009", "2009-2010", "2010-2011", "2011-2012", "2012-2013"
+    ],
+    "4-Year University": [22000, 22500, 23000, 23000, 23500, 24000, 24500, 25000, 25000, 25500],
+    "2-Year College": [12000, 12500, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 14500],
+    "1-Year Private Career College": [8000, 8500, 8500, 9000, 9000, 9500, 9500, 10000, 10000, 10500],
+}
+
+# Convert data to a Pandas DataFrame
+df = pd.DataFrame(data)
+
+# Plotting the data
+plt.figure(figsize=(10, 6))
+
+# Create bar positions for each category
+x = range(len(df["Academic Year"]))
+bar_width = 0.25
+
+# Plot each bar
+plt.bar(
+    [p - bar_width for p in x], 
+    df["4-Year University"], 
+    width=bar_width, label="4-Year University Students", color="blue"
+)
+plt.bar(
+    x, 
+    df["2-Year College"], 
+    width=bar_width, label="2-Year College Students", color="red"
+)
+plt.bar(
+    [p + bar_width for p in x], 
+    df["1-Year Private Career College"], 
+    width=bar_width, label="1-Year Private Career College Students", color="green"
+)
+
+# Adding labels and title
+plt.xticks(x, df["Academic Year"], rotation=45)
+plt.xlabel("Academic Year")
+plt.ylabel("Average Repayable Debt ($)")
+plt.title("Average Repayable Debt by Postsecondary Sector and Program Duration")
+plt.legend(loc="upper left")
+
+# Display the plot
+plt.tight_layout()
+plt.show()
+
 
     > Who is your intended audience? 
 Policy-makers: To assess trends in student debt and evaluate funding programs like OSAP.
